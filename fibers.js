@@ -5,7 +5,11 @@ Math.random();
 
 // Look for binary for this platform
 var v8 = 'v8-'+ /[0-9]+\.[0-9]+/.exec(process.versions.v8)[0];
-var modPath = path.join(__dirname, 'bin', process.platform+ '-'+ process.arch+ '-'+ v8, 'fibers');
+var platform = process.platform;
+if(platform == 'mac'){
+    platform = 'darwin';
+}
+var modPath = path.join(__dirname, 'bin', platform+ '-'+ process.arch+ '-'+ v8, 'fibers');
 try {
 	fs.statSync(modPath+ '.node');
 } catch (ex) {
