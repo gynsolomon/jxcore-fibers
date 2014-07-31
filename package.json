@@ -1,11 +1,11 @@
 {
-	"name": "fibers",
+	"name": "jxcore-fibers",
 	"version": "1.0.1",
 	"description": "Cooperative multi-tasking for Javascript",
 	"keywords": [
 		"fiber", "fibers", "coroutine", "thread", "async", "parallel", "worker", "future", "promise"],
-	"homepage": "https://github.com/laverdet/node-fibers",
-	"author": "Marcel Laverdet <marcel@laverdet.com> (https://github.com/laverdet/)",
+	"homepage": "https://github.com/gynsolomon/jxcore-fibers",
+	"author": "Marcel Laverdet <marcel@laverdet.com> (https://github.com/laverdet/), Yanan Guo <gynsolomon@gmail.com> (https://github.com/gynsolomon/)",
 	"main": "fibers",
 	"scripts": {
 		"install": "node ./build.js",
@@ -13,7 +13,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/laverdet/node-fibers.git"
+		"url": "git://github.com/gynsolomon/jxcore-fibers.git"
 	},
 	"engines": {
 		"node": ">=0.5.2"
